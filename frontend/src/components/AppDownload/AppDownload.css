@@ -1,0 +1,45 @@
+/* Responsive styles for AppDownload component */
+
+.app-download {
+    margin: auto;
+    margin-top: 100px;
+    font-size: calc(max(3vw, 20px) * (100vw / 1440)); /* Responsive font size */
+    font-weight: 500;
+    text-align: center; /* Center text on all devices */
+  }
+  
+  .app-download-platforms {
+    display: flex;
+    justify-content: center;
+    gap: calc(max(2vw, 10px) * (100vw / 1440)); /* Responsive gap */
+    margin-top: 40px;
+  }
+  
+  .app-download-platforms img {
+    width: calc(max(30vw, 120px) * (100vw / 1440)); /* Responsive image width */
+    max-width: 180px;
+    transition: transform 0.5s;
+    cursor: pointer;
+  }
+  
+  .app-download-platforms img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Media queries for additional responsiveness (adjust breakpoints as needed) */
+  
+  @media (max-width: 768px) {
+    .app-download {
+      margin-top: 50px; /* Adjust margin for smaller screens */
+    }
+  
+    .app-download-platforms {
+      flex-wrap: wrap; /* Wrap platforms on smaller screens */
+      justify-content: space-around; /* Distribute platforms evenly */
+    }
+  
+    .app-download-platforms img {
+      width: calc(45vw * (100vw / 768)); /* Adjust image width for smaller screens */
+    }
+  }
+  
