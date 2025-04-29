@@ -1,7 +1,6 @@
 .header {
     height: 34vw;
     margin: 3vw auto;
-    background: url('/header_img.png') no-repeat;
     background-size: cover;
     position: relative;
     border-radius: 2vw;

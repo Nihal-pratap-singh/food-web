@@ -1,0 +1,65 @@
+/* MobileNav.css */
+
+.mobile-nav {
+    position: relative;
+    display: none; /* hidden by default */
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    color: #f85555;
+    z-index: 1001;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.mobile-menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #f85555;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px;
+}
+
+.mobile-menu-wrapper.open {
+    left: 0;
+}
+
+.mobile-menu-items {
+    list-style: none;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mobile-menu-items a {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.mobile-menu-items a:hover {
+    color: #fff7d0;
+}
+
+.mobile-menu-items .active {
+    border-bottom: 2px solid white;
+}
+
+/* Show on small screens */
+@media (max-width: 750px) {
+    .mobile-nav {
+        display: block;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+}

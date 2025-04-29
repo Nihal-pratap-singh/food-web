@@ -1,0 +1,50 @@
+/* Container for search results */
+.search-results {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .search-results h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #222;
+    text-align: center;
+  }
+  
+  /* Grid layout for food items */
+  .search-results-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* Style for message if no results */
+  .search-results p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+  }
+  
+  /* Media Queries for additional responsiveness */
+  @media (max-width: 768px) {
+    .search-results h2 {
+      font-size: 1.5rem;
+    }
+  
+    .search-results-list {
+      gap: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-results {
+      padding: 1rem 0.5rem;
+    }
+  
+    .search-results h2 {
+      font-size: 1.3rem;
+    }
+  }
+  

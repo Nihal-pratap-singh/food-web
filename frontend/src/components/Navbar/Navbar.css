@@ -11,6 +11,23 @@
     /* Using vw for better responsiveness */
 }
 
+
+.mobile-nav{
+    display: none;
+}
+.mobile-menu-items{
+
+    background: #f85555;
+    width: 70%;
+    height: 100vh;
+}
+
+.menu-button{
+    border: none;
+    background: none;
+}
+
+
 .navbar-menu {
     display: flex;
     list-style: none;
@@ -28,7 +45,7 @@
     /* Using vw for better responsiveness */
 }
 
-.navbar button {
+.navbar .button {
     background: transparent;
     font-size: 1vw;
     /* Using vw for better responsiveness */
@@ -41,7 +58,7 @@
     transition: 0.3s;
 }
 
-.navbar button:hover {
+.navbar .button:hover {
     background-color: #ffbaba;
 }
 
@@ -127,7 +144,7 @@
         width: 22px;
     }
 
-    .navbar-right button {
+    .navbar-right .button {
         padding: 8px 25px;
     }
 }
@@ -152,7 +169,7 @@
         width: 20px;
     }
 
-    .navbar-right button {
+    .navbar-right .button {
         padding: 7px 20px;
         font-size: 15px;
     }
@@ -161,5 +178,62 @@
 @media (max-width :750px) {
     .navbar .logo {
         width: 140px;
+    }
+    .navbar-menu {
+        display: none;
+    }
+
+    .mobile-nav{
+        display: block;
+    }
+}                  
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+    gap: 10px;
+    border: 1px solid lightgray;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 140px;
+}
+
+
+.suggestion-list {
+    position: absolute;
+    background: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 180px;
+    z-index: 10;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.suggestion-list li {
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.suggestion-list li:hover {
+    background-color: #f0f0f0;
+}
+
+
+@media (max-width: 750px) {
+    .search-box input {
+        width: 100px;
+        font-size: 14px;
     }
 }

@@ -6,6 +6,11 @@ import Home from './pages/Home/Home';
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder';
 import Footer from './components/Footer/Footer';
 import LoginPopup from './components/LoginPopup/LoginPopup';
+import SearchResults from './components/Navbar/SearchResults';
+import Search from './components/Navbar/Search'
+
+
+
 
 const App = () => {
     const [showLogin, setShowLogin] = useState(false);
@@ -19,6 +24,9 @@ const App = () => {
                     <Route path='/' element={<Home />} />
                     <Route path='/cart' element={<Cart />} /> {/* Corrected Path to path */}
                     <Route path='/order' element={<PlaceOrder />} />
+                    <Route path='/search' element={<SearchResults />} />
+                    <Route path="/search" element={<Search />} />
+
                 </Routes>
             </div>
             <Footer />
