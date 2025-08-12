@@ -90,17 +90,18 @@ JWT_SECRET=your_jwt_secret
 
 ```bash
 cd backend
-npm run dev
+npm start 
 ```
 
 **Frontend**
 
 ```bash
 cd frontend
-npm start
+npm run dev 
 ```
 
 ---
+
 
 
 
