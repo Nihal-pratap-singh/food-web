@@ -1,7 +1,3 @@
-Got it — your README needs better spacing, alignment, and formatting so it looks clean and professional on GitHub.
-Here’s a **polished version** of your README with consistent spacing, bullet alignment, and visual clarity.
-
----
 
 # 🍔 Fast Food Ordering Website
 
@@ -101,6 +97,7 @@ npm run dev
 ```
 
 ---
+
 
 
 
